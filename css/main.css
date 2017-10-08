@@ -1,0 +1,3 @@
+html, body, body > .row, #mapContainer, #map{
+    height: 100%;
+}
