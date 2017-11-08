@@ -1,3 +1,32 @@
 html, body, body > .row, #mapContainer, #map{
     height: 100%;
 }
+body {
+    width: 100%;
+}
+#mainContainer {
+    display: inline;
+}
+/* .noSidePadding {
+    padding-left: 0px;
+    padding-right: 0px;
+} */
+#mapContainer {
+    padding-left: 0px;
+    width: 80%;
+    min-width: 790px;
+    float: left;
+}
+.listContainer {
+    height: 100%;
+    /* width: 20%; */
+    width: 300px;
+    overflow-y: auto;
+    /* background-color: rgb(81, 83, 90); */
+    padding-right: 0px;
+    float: left;
+}
+.listItem {
+    margin: 0px 0px 5px 10px;
+    background-color: #ACAEB5;
+}

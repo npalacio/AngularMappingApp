@@ -1,17 +1,39 @@
 <!DOCTYPE html>
-<html>
-<!-- <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script> -->
+<html ng-app="app">
 <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 <link rel="stylesheet" href="https://js.arcgis.com/4.5/esri/css/main.css">
 <script src="https://js.arcgis.com/4.5/"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+<script src="https://unpkg.com/angular-esri-map@2"></script>
+
 <link href="./css/main.css" rel="stylesheet">
-<script src="main.js"></script>
 <body>
-<div class="row" ng-controller="controller">
-    <div class="col-md-3"></div>
-    <div id="mapContainer" class="col-md-9">
+<div id="mainContainer" ng-controller="controller">
+    <div class="listContainer">
+        <list ng-controller="listController"></list>
+    </div>
+    <div id="mapContainer" class="" ng-controller="mapController">
         <div id="map"></div>
     </div>
 </div>
 </body>
+
+<!-- App -->
+<script src="./app/app.js"></script>
+
+<!-- Config -->
+<script src="./config.js"></script>
+
+<!-- Services -->
+<script src="./app/services/listService.js"></script>
+
+<!-- Controllers -->
+<script src="./app/controllers/controller.js"></script>
+<script src="./app/controllers/listController.js"></script>
+<script src="./app/controllers/listItemController.js"></script>
+<script src="./app/controllers/mapController.js"></script>
+
+<!-- Directives -->
+<script src="./app/directives/listDirective.js"></script>
+<script src="./app/directives/listItemDirective.js"></script>
 </html>
