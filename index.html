@@ -12,8 +12,9 @@
     <div class="listContainer">
         <list ng-controller="listController"></list>
     </div>
-    <div id="mapContainer" class="" ng-controller="mapController">
+    <div id="mapContainer"  ng-controller="mapController" ng-style="{'width': mapWidth}">
         <div id="map"></div>
+        <info-window attrs="infoWindowAttrs" style-attrs="infoWindowStyleAttrs"></info-window>
     </div>
 </div>
 </body>

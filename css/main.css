@@ -2,10 +2,13 @@ html, body, body > .row, #mapContainer, #map{
     height: 100%;
 }
 body {
-    width: 100%;
+    /* width: 100%; */
+    width: auto;
+    min-width: 750px;
 }
 #mainContainer {
     display: inline;
+    /* min-width: 750px; */
 }
 /* .noSidePadding {
     padding-left: 0px;
@@ -13,20 +16,41 @@ body {
 } */
 #mapContainer {
     padding-left: 0px;
-    width: 80%;
-    min-width: 790px;
+    /* width: 80%; */
+    width: 85%;
+    /* min-width: 850px; */
     float: left;
+}
+#map {
+    width: 100%;
 }
 .listContainer {
     height: 100%;
-    /* width: 20%; */
-    width: 300px;
+    width: 15%;
+    /* min-width: 150px; */
+    /* width: 300px; */
     overflow-y: auto;
     /* background-color: rgb(81, 83, 90); */
     padding-right: 0px;
     float: left;
 }
 .listItem {
-    margin: 0px 0px 5px 10px;
-    background-color: #ACAEB5;
+    width: 100%;
+    height: 50px;
+    padding: 2px 0px 0px 5px;
+    background-color: #c0c0c0;
+    border-top: 2px solid white;
+    border-left: 2px solid white;
+}
+.listItem > .state {
+    font-size: 16px;
+    font-weight: bold;
+}
+#infoWindow {
+    position: absolute;
+    /* left: 400px;
+    top: 20px; */
+    height: 100px;
+    width: 100px;
+    z-index: 1;
 }

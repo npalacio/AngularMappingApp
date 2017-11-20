@@ -1,4 +1,6 @@
 <div class="listItem">
-    State: {{iteminfo.attributes.STATE_NAME}}<br/>
-    Inmate AnnualCost: {{iteminfo.attributes.AverageAnnualCostPerInmate | currency: "$" : 0}} <br/>
+    <span class="state">{{iteminfo.attributes.STATE_NAME}}</span>
+    <span class="population">({{iteminfo.attributes.POP2010 | number : 0}} People)</span>
+    <br>
+    <span class="difference">Spending Difference: {{iteminfo.attributes.InmateMinusStudent | currency: "$" : 0}} </span>
 </div>
