@@ -48,9 +48,26 @@ body {
 }
 #infoWindow {
     position: absolute;
-    /* left: 400px;
-    top: 20px; */
-    height: 100px;
-    width: 100px;
+    height: 150px;
+    width: 250px;
     z-index: 1;
+}
+
+/* Simple css loading icon */
+/* https://www.w3schools.com/howto/howto_css_loader.asp */
+.loader {
+    border: 12px solid #f3f3f3; /* Light grey */
+    border-top: 12px solid #04519b; /* Blue */
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    animation: spin 2s linear infinite;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
 }

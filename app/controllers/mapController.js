@@ -5,11 +5,13 @@ angular.module("app").controller("mapController", ["$scope", "esriLoader", "conf
     //     differenceInSpending: "diff"
     // };
 
-    $scope.infoWindow = {};
-    $scope.infoWindowStyleAttrs = {
-        'left': '400px',
-        'top': '20px'
-    };
+    // $scope.infoWindow = {};
+    $scope.clickInfo = {};
+    // $scope.infoWindowAttrs = {};
+    // $scope.clickLocation = {};
+    // $scope.$watch('infoWindowStyleAttrs', function() {
+    //     console.log($scope.infoWindowStyleAttrs);
+    // });
     // $scope.styleInfoWindow = function() {
     //     $scope.infoWindowStyle = {
     //         'left': $scope.infoWindow.left,
@@ -49,11 +51,21 @@ angular.module("app").controller("mapController", ["$scope", "esriLoader", "conf
                 var graphic = response.results[0].graphic;
                 var screenPoint = response.screenPoint;
                 // $scope.state.differenceInSpending = graphic.attributes.DifferenceInmateStudent;
-                $scope.infoWindowAttrs.differenceInSpending = graphic.attributes.DifferenceInmateStudent;
+                // $scope.infoWindowAttrs.differenceInSpending = graphic.attributes.DifferenceInmateStudent;
+                // $scope.infoWindowAttrs.objectId = graphic.attributes.OBJECTID;
+                $scope.clickInfo.objectId = graphic.attributes.OBJECTID;
                 // $scope.infoWindow.left = screenPoint.x + 'px';
-                $scope.infoWindowStyleAttrs.left = screenPoint.x + 'px';
+                // $scope.infoWindowStyleAttrs.left = screenPoint.x + 'px';
                 // $scope.infoWindow.top = screenPoint.y + 'px';
-                $scope.infoWindowStyleAttrs.top = screenPoint.y + 'px';
+                // $scope.infoWindowStyleAttrs.top = screenPoint.y + 'px';
+                $scope.clickInfo.x = screenPoint.x;
+                $scope.clickInfo.y = screenPoint.y;
+                // $scope.clickLocation.x = screenPoint.x;
+                // $scope.clickLocation.y = screenPoint.y;
+                // $scope.clickLocation = {
+                //     left: screenPoint.x,
+                //     top: screenPoint.y
+                // };
                 // $scope.styleInfoWindow();
                 $scope.$apply();
             });

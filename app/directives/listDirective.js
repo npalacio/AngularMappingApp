@@ -1,6 +1,7 @@
     angular.module("app").directive("list", function() {
         return {
             templateUrl: './app/templates/listTemplate.html',
-            restrict: 'E'
+            restrict: 'E',
+            controller: 'listController'
         };
     });

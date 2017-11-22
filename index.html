@@ -10,11 +10,11 @@
 <body>
 <div id="mainContainer" ng-controller="controller">
     <div class="listContainer">
-        <list ng-controller="listController"></list>
+        <list></list>
     </div>
-    <div id="mapContainer"  ng-controller="mapController" ng-style="{'width': mapWidth}">
+    <div id="mapContainer"  ng-controller="mapController">
         <div id="map"></div>
-        <info-window attrs="infoWindowAttrs" style-attrs="infoWindowStyleAttrs"></info-window>
+        <info-window click="clickInfo"></info-window>
     </div>
 </div>
 </body>
@@ -27,14 +27,17 @@
 
 <!-- Services -->
 <script src="./app/services/listService.js"></script>
+<script src="./app/services/identifyService.js"></script>
 
 <!-- Controllers -->
 <script src="./app/controllers/controller.js"></script>
 <script src="./app/controllers/listController.js"></script>
 <script src="./app/controllers/listItemController.js"></script>
 <script src="./app/controllers/mapController.js"></script>
+<script src="./app/controllers/infoWindowController.js"></script>
 
 <!-- Directives -->
 <script src="./app/directives/listDirective.js"></script>
 <script src="./app/directives/listItemDirective.js"></script>
+<script src="./app/directives/infoWindowDirective.js"></script>
 </html>
