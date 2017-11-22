@@ -25,7 +25,7 @@ angular.module("app").constant("config", {
     queryTasks: {
         list: {
             url: "http://services1.arcgis.com/4yjifSiIG17X0gW4/arcgis/rest/services/EducationVersusIncarceration/FeatureServer/0",
-            outFields: ["STATE_NAME","InmateMinusStudent", "POP2010"],
+            outFields: ["OBJECTID","STATE_NAME","InmateMinusStudent","POP2010"],
             where: "1=1",
             returnGeometry: false
         },

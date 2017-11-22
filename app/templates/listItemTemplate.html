@@ -1,4 +1,4 @@
-<div class="listItem">
+<div class="listItem" ng-class="selectedObjectId == iteminfo.attributes.OBJECTID ? 'selectedListItem' : ''">
     <span class="state">{{iteminfo.attributes.STATE_NAME}}</span>
     <span class="population">({{iteminfo.attributes.POP2010 | number : 0}} People)</span>
     <br>

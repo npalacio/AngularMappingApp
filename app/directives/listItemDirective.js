@@ -4,7 +4,8 @@ angular.module("app").directive("listItem", function() {
         restrict: 'E',
         controller: 'listItemController',
         scope: {
-            iteminfo: '='
+            iteminfo: '=',
+            selectedObjectId: "="
         }
     };
 });

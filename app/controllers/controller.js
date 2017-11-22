@@ -11,4 +11,8 @@ angular.module("app").controller("controller", ["$scope", "$window", function($s
         // mapContainer.width($window.innerWidth - 300);
         // $("#mapContainer").width = $window.innerWidth - 300;
     // });
+    $scope.$on('map:click', function(event, data) {
+        event.stopPropagation();
+        $scope.$broadcast('list:selectItem', data);
+    });
 }]);
