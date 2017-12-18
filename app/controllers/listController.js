@@ -6,12 +6,10 @@ angular.module("app").controller("listController", ["$scope", "$anchorScroll", "
     });
 
     $scope.orderList = function(item) {
-        // return item1.attributes.STATE_NAME.localCompare(item2.attributes.STATE_NAME);
         return item.attributes.STATE_NAME;
     };
     
     $scope.$on('list:selectItem', function(event, data) {
         $scope.selectedObjectId = data.objectId;
-        $anchorScroll(20);
     });
 }]);
