@@ -3,5 +3,6 @@ angular.module("app").controller("controller", ["$scope", "$window", function($s
         event.stopPropagation();
         $scope.$broadcast('list:selectItem', data);
         //This is a change in the test branch
+        //This is a change in the test branch that will be merged into master
     });
 }]);
