@@ -8,7 +8,7 @@ body {
 }
 #mainContainer {
     display: inline;
-    /* min-width: 750px; */
+    min-width: 800px;
 }
 /* .noSidePadding {
     padding-left: 0px;
@@ -16,19 +16,19 @@ body {
 } */
 #mapContainer {
     padding-left: 0px;
-    /* width: 80%; */
-    width: 85%;
-    /* min-width: 850px; */
+    /* width: 700px; */
+    /* width: 85%; */
+    /* min-width: 800px; */
     float: left;
 }
 #map {
     width: 100%;
 }
 .listContainer {
-    height: 100%;
-    width: 15%;
+    height: 90%;
+    /* width: 15%; */
     /* min-width: 150px; */
-    /* width: 300px; */
+    width: 300px;
     overflow-y: auto;
     /* background-color: rgb(81, 83, 90); */
     padding-right: 0px;

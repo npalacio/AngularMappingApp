@@ -1,10 +1,23 @@
-angular.module("app").controller("mapController", ["$scope", "esriLoader", "config", function($scope, esriLoader, config){
+angular.module("app").controller("mapController", ["$scope", "$window", "esriLoader", "config", function($scope, $window, esriLoader, config){
     $scope.clickInfo = {};
     var createMap = function(
         Map,
         MapView,
         FeatureLayer
     ) {
+        var resizeMap = function() {
+            var mapWidth = $window.innerWidth - 350;
+            var mapHeight = $window.innerHeight - 50;
+            $scope.mapStyle = {
+                width: mapWidth + "px",
+                height: mapHeight + "px"
+            };
+        };
+        resizeMap();
+        angular.element($window).bind('resize', function() {
+            resizeMap();
+            $scope.$digest();
+        });
         var layers = [];
         var stateOutline = new FeatureLayer({
             url: config.layers.educationVsIncarceration.state.url,

@@ -1,3 +1,5 @@
-<div ng-repeat="item in listItems | orderBy: orderList">
-    <list-item iteminfo="item" selected-object-id="selectedObjectId"></list-item>
+<div class="listContainer" ng-style="listStyle">
+    <div ng-repeat="item in listItems | orderBy: orderList">
+        <list-item iteminfo="item" selected-object-id="selectedObjectId"></list-item>
+    </div>
 </div>
