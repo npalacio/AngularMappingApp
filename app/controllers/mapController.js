@@ -6,7 +6,7 @@ angular.module("app").controller("mapController", ["$scope", "$window", "esriLoa
         FeatureLayer
     ) {
         var resizeMap = function() {
-            var mapWidth = $window.innerWidth - 350;
+            var mapWidth = $window.innerWidth - 317;
             var mapHeight = $window.innerHeight - 50;
             $scope.mapStyle = {
                 width: mapWidth + "px",

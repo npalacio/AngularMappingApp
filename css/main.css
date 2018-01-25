@@ -3,22 +3,15 @@ html, body, body > .row, #mapContainer, #map{
 }
 body {
     /* width: 100%; */
-    width: auto;
-    min-width: 750px;
+    min-width: 800px;
+    width: auto !important;
+    width: 800px;
 }
 #mainContainer {
     display: inline;
-    min-width: 800px;
 }
-/* .noSidePadding {
-    padding-left: 0px;
-    padding-right: 0px;
-} */
 #mapContainer {
     padding-left: 0px;
-    /* width: 700px; */
-    /* width: 85%; */
-    /* min-width: 800px; */
     float: left;
 }
 #map {
@@ -26,11 +19,8 @@ body {
 }
 .listContainer {
     height: 90%;
-    /* width: 15%; */
-    /* min-width: 150px; */
     width: 300px;
     overflow-y: auto;
-    /* background-color: rgb(81, 83, 90); */
     padding-right: 0px;
     float: left;
 }
@@ -80,6 +70,7 @@ body {
 }
 #navBar {
     z-index: 10;
+    min-width: 800px;
 }
 #appTitle {
     background-color: transparent !important;
