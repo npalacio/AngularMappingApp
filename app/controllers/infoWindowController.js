@@ -10,6 +10,10 @@ angular.module("app").controller("infoWindowController", ["$scope", "$window", "
         };
     };
     styleInfoWindow("none");
+    $scope.close = function() {
+        styleInfoWindow("none");
+        $scope.$emit('map:closeInfoWindow');
+    };
     var identify = function() {
         if($scope.click.objectId) {
             styleInfoWindow("inline");

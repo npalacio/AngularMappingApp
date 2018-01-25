@@ -32,6 +32,8 @@ body {
     height: 50px;
     padding: 2px 0px 0px 5px;
     background-color: #c0c0c0;
+    background-color: #C2CCF7;
+    border-radius: 10px;
     border-top: 2px solid white;
     border-left: 2px solid white;
 }
@@ -80,4 +82,9 @@ body {
 }
 .nav>li>a {
     color: white !important;
+}
+.close {
+    position: absolute;
+    right: 8px;
+    top: 8px;
 }

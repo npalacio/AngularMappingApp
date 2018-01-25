@@ -12,6 +12,9 @@ angular.module("app").controller("listController", ["$scope", "$window", "listSe
     $scope.$on('list:selectItem', function(event, data) {
         $scope.selectedObjectId = data.objectId;
     });
+    $scope.$on('list:deselectItem', function(event, data) {
+        $scope.selectedObjectId = undefined;
+    });
     var resizeMap = function() {
         // var listWidth = $window.innerWidth - 350;
         var mapHeight = $window.innerHeight - 50;

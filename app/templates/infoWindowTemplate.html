@@ -5,6 +5,9 @@
 </div> -->
 <div id="infoWindow" class="row" ng-style="infoWindowStyle">
     <form class="form-horizontal well">
+        <button type="button" class="close" aria-label="Close" ng-click="close()">
+            <span aria-hidden="true">&times;</span>
+        </button>
         <div class="loader" ng-show="loadingAttrs"></div>
         <div ng-show="!loadingAttrs">
             <div class="form-group">
